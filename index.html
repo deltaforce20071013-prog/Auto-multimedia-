@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080923">
+  <title>Auto Multimedia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <header class="top-bar">
+      <span id="status">AUTO MULTIMEDIA</span>
+      <span id="clock">00:00</span>
+      <span id="date">Loading...</span>
+    </header>
+
+    <main class="main-screen">
+
+      <section class="car-panel">
+        <div class="car-glow">AUTO</div>
+        <div class="speed" id="speed">0</div>
+        <div class="speed-unit">km/h</div>
+        <div class="car-name">DRIVE SYSTEM</div>
+      </section>
+
+      <section class="right-panel">
+
+        <div class="app-panel">
+          <h1>Welcome</h1>
+          <div class="app-grid">
+            <button onclick="openApp('Navigation')">🧭<span>Maps</span></button>
+            <button onclick="openApp('Bluetooth')">📞<span>Phone</span></button>
+            <button onclick="openApp('Video')">🎬<span>Video</span></button>
+            <button onclick="openApp('YouTube')">▶️<span>YouTube</span></button>
+          </div>
+        </div>
+
+        <div class="music-panel">
+          <div class="music-icon">♫</div>
+          <div class="music-info">
+            <h3 id="track">Auto Multimedia</h3>
+            <p>Music Player</p>
+            <div class="music-controls">
+              <button onclick="previousTrack()">⏮</button>
+              <button onclick="toggleMusic()" id="play">▶</button>
+              <button onclick="nextTrack()">⏭</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button onclick="openApp('Navigation')">➤</button>
+      <button onclick="openApp('Phone')">☎</button>
+      <button onclick="openApp('Radio')">📻</button>
+      <button onclick="goHome()">⌂</button>
+      <button onclick="openApp('Music')">♫</button>
+      <button onclick="openApp('Video')">▶</button>
+      <button onclick="openApp('Settings')">⚙</button>
+    </nav>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
